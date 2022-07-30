@@ -18,7 +18,7 @@
                         Welcome!
                     </h1>
                     <div class="paragraph text-center">
-                        Wellcome to the official website of <span class="text-neutral-300 font-semibold">Tilen Hudrap</span> - a bassist, songwriter, producer, multi-instrumentalist and backing vocalist! Here you will find some basic info about Tilen's music path, the bands he performed with during the last 20+ years and more! Many more sections to come in the near future! Watch this space for updates!
+                        Welcome to the official website of <span class="text-neutral-300 font-semibold">Tilen Hudrap</span> - a bassist, songwriter, producer, multi-instrumentalist and backing vocalist! Here you will find some basic info about Tilen's music path, the bands he performed with during the last 20+ years and more! Many more sections to come in the near future! Watch this space for updates!
                     </div>
                     <div class="flex gap-8 mt-2">
                         <a href="{{ route('biography') }}" class="text-left md:text-center text-xs md:text-base shadow-md bg-none border-2 border-neutral-500 text-white font-semibold uppercase tracking-widest p-2 md:p-4 rounded hover:bg-brand/20 hover:ring-2 hover:ring-brand hover:border-transparent transition">learn more ...</a>
