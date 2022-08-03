@@ -34,13 +34,13 @@
 
         <!-- Wacken Open Air 2022 -->
         <div class="mb-8">
-            <div class="bg-black/40 p-4 md:p-8 rounded-xl flex gap-8">
-                <div class="w-1/3 space-y-8">
+            <div class="bg-black/40 p-4 md:p-8 rounded-xl flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/3 space-y-8">
                     <img src="{{ asset('/images/woa22.jpg') }}" alt="Wacken Open Air 2022">
                 </div>
-                <div class="w-2/3 text-neutral-400">
+                <div class="w-full md:w-2/3 text-neutral-400 text-sm md:text-base">
                     <div class="text-brand mb-8">03/08/2022</div>
-                    Metalheads, tune in tomorrow, 4th of August 2022, between 18:30 and 20:00 PM Central European Time and watch the <a href="https://live.wacken.com" class="font-semibold text-white">LIVE STREAM</a> of the sold out Wacken Open Air where Dirkschneider will perform infront of 80 000 fans from fifty plus countries!<br><br>
+                    Metalheads, tune in tomorrow, 4th of August 2022, between 18:30 and 20:00 PM Central European Time and watch the <a href="https://live.wacken.com" class="font-semibold text-white">LIVE STREAM</a> of the sold out Wacken Open Air where Dirkschneider will perform infront of 80 000 fans from fifty plus countries!<br>
                     You can watch the livestream <a href="https://live.wacken.com" class="font-semibold text-white">HERE</a>!
                 </div>
             </div>
