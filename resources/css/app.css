@@ -29,7 +29,7 @@
     }
     nav ul {
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        @apply flex gap-8 [&>*>a]:transition [&>*>a]:p-2 [&>*>a]:text-neutral-400 [&>*>a:hover]:text-neutral-300;
+        @apply flex gap-8 [&>*>a]:transition [&>*>a]:py-1 [&>*>a]:text-neutral-400 [&>*>a:hover]:text-neutral-300;
     }
     .mobile {
         @apply fixed top-0 left-0 w-screen h-screen bg-black/80;
@@ -59,7 +59,7 @@
         @apply flex font-caveat text-2xl text-brand [&>*>a]:p-4 [&>*>a:hover]:text-neutral-300 [&>*>a]:transition;
     }
     .active {
-        @apply text-neutral-300 border-b-2 border-brand;
+        @apply text-neutral-300 border-b-4 border-brand;
     }
     .title {
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -94,7 +94,6 @@
     textarea {
         @apply h-48;
     }
-
     input[type='radio']:before {
         content:'';
         display:block;
