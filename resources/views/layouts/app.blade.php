@@ -17,7 +17,7 @@
 
         <title>Tilen Hudrap // The Official Website - {{ $title ?? '' }}</title>
 
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite('resources/css/app.css')
 
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
     </head>
@@ -32,10 +32,12 @@
                         </svg>
                     </div>
                     <div>
-                        <a href="{{ route('home') }}">Tilen<span>Hudrap</span></a>
+                        <a wire:navigate href="{{ route('home') }}">Tilen<span>Hudrap</span></a>
                     </div>
                 </div>
+
                 <x-menu/>
+
                 <div class="social hidden md:flex">
                     <ul>
                         <li class="text-xs text-neutral-500 flex items-center gap-6 pr-4"><span class="text-2xl">Follow me on social media</span> <i class="bx bx-right-arrow-alt text-base text-neutral-600"></i></li>

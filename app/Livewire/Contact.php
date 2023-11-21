@@ -1,12 +1,16 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 use Illuminate\Http\Request;
-use App\Mail\Contact as MailContact;
+use Livewire\Attributes\Title;
+use Livewire\Attributes\Layout;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\Contact as MailContact;
 
+#[Layout('layouts.app')]
+#[Title('Home')]
 class Contact extends Component
 {
     public $name, $email, $recipient = 'press@tilenhudrap.com', $subject, $message;

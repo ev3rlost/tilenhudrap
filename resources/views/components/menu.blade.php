@@ -6,9 +6,9 @@
 
     <!-- Desktop -->
     <ul class="hidden md:flex">
-        <li><a href="{{ route('home') }}" class="{{ (request()->routeIs('home')) ? 'active' : '' }}">Home</a></li>
-        <li><a href="{{ route('biography') }}" class="{{ (request()->routeIs('biography')) ? 'active' : '' }}">Biography</a></li>
-        <li><a href="{{ route('contact') }}" class="{{ (request()->routeIs('contact')) ? 'active' : '' }}">Contact</a></li>
+        <li><a wire:navigate href="{{ route('home') }}" class="{{ (request()->routeIs('home')) ? 'active' : '' }}">Home</a></li>
+        <li><a wire:navigate href="{{ route('biography') }}" class="{{ (request()->routeIs('biography')) ? 'active' : '' }}">Biography</a></li>
+        <li><a wire:navigate href="{{ route('contact') }}" class="{{ (request()->routeIs('contact')) ? 'active' : '' }}">Contact</a></li>
     </ul>
 
     <!-- Mobile -->
@@ -17,9 +17,9 @@
             <i class="bx bx-x text-4xl"></i>
         </button>
         <ul>
-            <li><a href="{{ route('home') }}" class="{{ (request()->routeIs('home')) ? 'active' : '' }}">Home</a></li>
-            <li><a href="{{ route('biography') }}" class="{{ (request()->routeIs('biography')) ? 'active' : '' }}">Biography</a></li>
-            <li><a href="{{ route('contact') }}" class="{{ (request()->routeIs('contact')) ? 'active' : '' }}">Contact</a></li>
+            <li><a wire:navigate href="{{ route('home') }}" class="{{ (request()->routeIs('home')) ? 'active' : '' }}">Home</a></li>
+            <li><a wire:navigate href="{{ route('biography') }}" class="{{ (request()->routeIs('biography')) ? 'active' : '' }}">Biography</a></li>
+            <li><a wire:navigate href="{{ route('contact') }}" class="{{ (request()->routeIs('contact')) ? 'active' : '' }}">Contact</a></li>
         </ul>
         <div class="absolute bottom-0 w-full h-24 flex justify-evenly items-center gap-4 [&>a]:text-4xl [&>a]:text-brand">
             <a href="https://www.facebook.com/teelen.hudyrap" target="_blank"><i class="bx bxl-facebook"></i></a>

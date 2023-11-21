@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\PagesController;
+use App\Livewire\Home;
+use App\Livewire\Contact;
+use App\Livewire\Biography;
 use Illuminate\Support\Facades\Route;
 
-Route::controller(PagesController::class)->group(function () {
-    Route::get('/', 'home')->name('home');
-    Route::get('/biography', 'biography')->name('biography');
-    Route::get('/contact', 'contact')->name('contact');
-});
+Route::get('/', Home::class)->name('home');
+Route::get('/biography', Biography::class)->name('biography');
+Route::get('/contact', Contact::class)->name('contact');

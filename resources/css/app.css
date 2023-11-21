@@ -12,6 +12,24 @@
     --color-brand: var(--color-red);
 }
 
+/* Make clicks pass-through */
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: rgba(239,68,68,1) !important;
+    height: 3px !important;
+}
+
+#nprogress .peg {
+    display: none !important;
+  }
+
+#nprogress .spinner {
+    display: none !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -88,8 +106,11 @@
     input, textarea {
         @apply !rounded !text-neutral-400 !bg-black/30 !border !border-neutral-600 focus:!border-neutral-500 focus:!ring-0 focus:!bg-black/50 transition;
     }
+    input[type="radio"]  {
+        @apply focus:ring-0 focus:shadow-none focus:ring-offset-0;
+    }
     input[type="radio"]:checked  {
-        @apply checked:!border-brand checked:!outline-none checked:!shadow-none checked:!ring-0 focus:!border-transparent focus:!shadow-none focus:!outline-none focus:!ring-0;
+        @apply checked:!border-brand checked:!outline-none checked:!shadow-none checked:!ring-0 focus:!border-transparent focus:!shadow-none focus:!outline-none focus:!ring-0 focus:ring-offset-0;
     }
     textarea {
         @apply h-48;
